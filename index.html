@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Burger Bliss</title>
+  <meta name="description" content="Wireframe one-page : accueil, réassurance, services, prise de rendez-vous.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Icône image réutilisable (placeholder) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="icon-image" viewBox="0 0 96 96">
+      <rect width="96" height="96" rx="10" fill="currentColor"/>
+      <path d="M12 72 28 50l12 14 16-24 28 32z" fill="#fff"/>
+    </symbol>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#home" class="logo" aria-label="Accueil">
+        <span class="logo__icon" aria-hidden="true"></span>
+        <span class="logo__text">logo</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#reassurance" class="nav__link">Qui somme nous</a>
+        <a href="#services" class="nav__link">Nos services</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn--primary btn--sm">Parlons de votre projet</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. HOME ============ -->
+    <section class="hero" id="home">
+      <div class="container hero__content">
+        <p class="hero__label" data-reveal>Label goes here</p>
+        <h1 class="hero__title" data-reveal data-delay="1">Lorem Ipsum simply dummy</h1>
+        <p class="hero__text" data-reveal data-delay="2">
+          Welcome to Burger Bliss, where we take your cravings to a whole new level!
+          Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns.
+        </p>
+        <a href="#reassurance" class="btn btn--primary" data-reveal data-delay="3">lancer l’aventure</a>
+      </div>
+
+      <div class="hero__gallery" aria-hidden="true">
+        <div class="placeholder hero__card hero__card--left" data-reveal data-delay="3">
+          <svg class="placeholder__icon"><use href="#icon-image"/></svg>
+        </div>
+        <div class="placeholder hero__card hero__card--center" data-reveal data-delay="4">
+          <svg class="placeholder__icon"><use href="#icon-image"/></svg>
+        </div>
+        <div class="placeholder hero__card hero__card--right" data-reveal data-delay="3">
+          <svg class="placeholder__icon"><use href="#icon-image"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. RÉASSURANCE ============ -->
+    <section class="section reassurance" id="reassurance">
+      <div class="container">
+        <div class="split">
+          <div class="split__text">
+            <h2 class="title title--lg" data-reveal>Lorem Ipsum is simply dummy</h2>
+            <p class="text" data-reveal data-delay="1">
+              Welcome to Burger Bliss, where we take your cravings to a whole new level!
+              Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns.
+            </p>
+            <div class="cta-bar" data-reveal data-delay="2">
+              <a href="#services" class="btn btn--outline">Découvrez nos valeurs</a>
+            </div>
+          </div>
+          <div class="placeholder placeholder--tall" data-reveal="right">
+            <svg class="placeholder__icon"><use href="#icon-image"/></svg>
+          </div>
+        </div>
+
+        <ul class="stats">
+          <li class="stat" data-reveal data-delay="1">
+            <span class="stat__value" data-count="24" data-suffix="+">24+</span>
+            <span class="stat__label">Burger Blisses across</span>
+          </li>
+          <li class="stat" data-reveal data-delay="2">
+            <span class="stat__value" data-count="17" data-suffix="M">17M</span>
+            <span class="stat__label">Burger eaters and counting</span>
+          </li>
+          <li class="stat" data-reveal data-delay="3">
+            <span class="stat__value" data-count="95" data-prefix="+" data-suffix="%">+95%</span>
+            <span class="stat__label">Customer satisfaction</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 3. NOS SERVICES ============ -->
+    <section class="section services" id="services">
+      <div class="container">
+        <h2 class="title title--xl" data-reveal>Lorem Ipsum is simply dummy</h2>
+
+        <div class="services__list">
+          <article class="service">
+            <div class="service__text">
+              <h3 class="title title--md" data-reveal>Lorem Ipsum is simply dummy</h3>
+              <p class="text" data-reveal data-delay="1">
+                Welcome to Burger Bliss, where we take your cravings to a whole new level!
+                Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns.
+              </p>
+            </div>
+            <div class="placeholder placeholder--wide" data-reveal="right">
+              <svg class="placeholder__icon"><use href="#icon-image"/></svg>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__text">
+              <h3 class="title title--md" data-reveal>Lorem Ipsum is simply dummy</h3>
+              <p class="text" data-reveal data-delay="1">
+                Welcome to Burger Bliss, where we take your cravings to a whole new level!
+                Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns.
+              </p>
+            </div>
+            <div class="placeholder placeholder--wide" data-reveal="right">
+              <svg class="placeholder__icon"><use href="#icon-image"/></svg>
+            </div>
+          </article>
+        </div>
+
+        <!-- Timeline : 5 étapes reliées par une courbe -->
+        <div class="timeline" data-reveal>
+          <div class="timeline__scroll">
+            <svg class="timeline__svg" viewBox="0 0 1200 190" role="img" aria-label="Les 5 étapes">
+              <g class="timeline__curves" fill="none">
+                <path d="M108 60 C170 -10 250 -10 312 60"/>
+                <path d="M368 60 C430 130 510 130 572 60"/>
+                <path d="M628 60 C690 -10 770 -10 832 60"/>
+                <path d="M888 60 C950 130 1030 130 1092 60"/>
+              </g>
+              <g class="timeline__steps">
+                <g class="timeline__step"><circle cx="80"   cy="60" r="28"/><text x="80"   y="150">Texte 1</text></g>
+                <g class="timeline__step"><circle cx="340"  cy="60" r="28"/><text x="340"  y="150">Texte 2</text></g>
+                <g class="timeline__step"><circle cx="600"  cy="60" r="28"/><text x="600"  y="150">Texte 3</text></g>
+                <g class="timeline__step"><circle cx="860"  cy="60" r="28"/><text x="860"  y="150">Texte 4</text></g>
+                <g class="timeline__step"><circle cx="1120" cy="60" r="28"/><text x="1120" y="150">Texte 5</text></g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. DESKTOP (RDV + OFFRES) ============ -->
+    <section class="section booking" id="contact">
+      <div class="container">
+        <h2 class="title title--lg title--center" data-reveal>Lorem Ipsum is simply dummy</h2>
+
+        <div class="booking__grid">
+          <div class="booking__col booking__col--appointment">
+            <h3 class="title title--sm" data-reveal>Booker un randez-vous</h3>
+            <div class="booking__images">
+              <div class="placeholder placeholder--grey" data-reveal data-delay="1"></div>
+              <div class="placeholder placeholder--grey" data-reveal data-delay="2"></div>
+            </div>
+          </div>
+
+          <div class="booking__col booking__col--offers">
+            <h3 class="title title--sm" data-reveal>Votre budget , nos offres</h3>
+            <svg class="booking__arrow" viewBox="0 0 16 80" aria-hidden="true" data-reveal>
+              <path d="M8 0v76M2 68l6 8 6-8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <p class="text text--center" data-reveal data-delay="1">
+              Welcome to Burger Bliss, where we take your cravings to a whole new level!
+              Our mouthwatering burgers are made from 100% beef and are served on freshly baked buns.
+            </p>
+            <a href="#" class="btn btn--outline btn--block" data-reveal data-delay="2">Télécharger la grille tarifaire</a>
+          </div>
+        </div>
+      </div>
+      <div class="booking__footer" data-reveal></div>
+    </section>
+
+  </main>
+</body>
+</html>
